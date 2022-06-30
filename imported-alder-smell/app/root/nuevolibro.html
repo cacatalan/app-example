@@ -1,0 +1,67 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Document</title>
+        <style>::-webkit-scrollbar {width: 10px} ::-webkit-scrollbar-track {background: #000} ::-webkit-scrollbar-thumb {background: darkgrey} ::-webkit-scrollbar-thumb:hover {background: red} .jexcel .editor .jclose:after {color:black!important} [centrado]{text-align:center} [justificado]{text-align:justify}[derecha]{text-align:right;}[tachado]{text-decoration:strike-through}[responsive]{width:960px;margin:auto;}@media (max-width:970px) {[responsive]{width:90%}}.skeleton{margin:auto}[tiene-sombra]{box-shadow:4px 4px 8px rgba(0,0,0,.7);}</style>
+<!-- jQuery Mobile CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" />
+<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.css" />
+<!-- Theme -->
+<link rel="stylesheet" href="https://gorosito.red/bloques/apps/vendor/themes/themario2.min.css">
+<link rel="stylesheet" href="https://gorosito.red/bloques/apps/vendor/themes/jquery.mobile.icons.min.css">
+<!-- NativeDroid2 CSS --><!-- Metainformación de la página web  --><meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+<meta name="mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<!-- Otras librerías --><link rel="stylesheet" href="https://gorosito.red/dame/draggula.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<link rel="stylesheet" href="https://gorosito.red/bloques/apps/vendor/waves/waves.min.css"><script src="https://unpkg.com/split.js/dist/split.min.js"></script><script type="text/javascript" src="https://eduardotkoller.github.io/convForm/dist/autosize.min.js"></script><script src="https://eduardotkoller.github.io/convForm/dist/jquery.convform.js"></script><link rel="stylesheet" href="https://eduardotkoller.github.io/convForm/dist/jquery.convform.css">
+</head>
+    <body >
+        <script>document.body.style.display="none"</script>
+          <section id="idPagina1" data-role="page" data-theme="a"  >
+    <header data-role="header" data-position="fixed"  >
+      <h1 izquierda  >
+      Nuevo Libro</h1>
+    </header>
+    <article data-role="content"  >
+      <form id="formu192" action="agregarlibro.php" method="get" data-ajax="false" >
+        <fieldset class='ui-field-contain'  >
+        <label for='libro'>Titulo del Libro</label>
+        <input id='libro' name='libro' placeholder='Titulo del Libro' type='text'  data-conv-question='Decime el nombre de tu libro' - property='libro' />
+        </fieldset>
+        <fieldset class='ui-field-contain'  >
+        <label for='autor'>Nombre del Autor</label>
+        <input id='autor' name='autor' placeholder='Nombre del Autor' type='text'  data-conv-question='Decime el nombre del autor' - property='autor' />
+        </fieldset>
+        <fieldset class='ui-field-contain'  >
+        <label for='categorias'>Categorías</label>
+        <input id='categorias' name='categorias' placeholder='novela policial ciencia-ficcion' type='text'  data-conv-question='Escribí las categorías todo en minúscula|Cuáles son las categorías' - property='categorias' />
+        </fieldset>
+        <fieldset class='ui-field-contain' >
+        <label for='sinopsis'>Sinopsis</label>
+        <textarea id='sinopsis' name='sinopsis' placeholder='Este libro se trata de...'  data-conv-question='Escribí su sinopsis' -  ></textarea>
+        </fieldset>
+        <fieldset class='ui-field-contain'  >
+        <label for='lanzamiento'>Año de lanzamiento</label>
+        <input id='lanzamiento' name='lanzamiento' placeholder='Año de lanzamiento' type='number'  data-conv-question='Decime el año de tu libro' - property='libro' />
+        </fieldset>
+        <fieldset class='ui-field-contain'  >
+        <label for='imagen'>url imagen</label>
+        <input id='imagen' name='imagen' placeholder='Portada' type='url'  data-conv-question='Carga la portada de tu libro' - property='libro' />
+        </fieldset>
+        <fieldset class='ui-field-contain'  >
+        <label for='precio'>precio</label>
+        <input id='precio' name='precio' placeholder='precio' type='number'  data-conv-question='Decime el precio de tu libro' - property='libro' />
+        </fieldset>
+        <input type="submit" value="Enviar formulario" /></form></article>
+  </section><script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+<script>$( document ).on( "mobileinit", function() {$.mobile.ignoreContentEnabled = true;
+if(navigator.userAgent.indexOf("Chrome")>=0){$.mobile.changePage.defaults.changeHash = false; $.mobile.hashListeningEnabled = false; $.mobile.pushStateEnabled = false;}
+});</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.js"></script>
+<script src="https://gorosito.red/bloques/apps/js/nativedroid2.js"></script><script src="https://gorosito.red/bloques/apps/vendor/waves/waves.min.js"></script>
+        <script>
+        $(function(){;;;document.body.style.display="block";})
+        </script>
+    </body>
+</html>

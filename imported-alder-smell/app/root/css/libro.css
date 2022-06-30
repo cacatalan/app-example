@@ -1,0 +1,89 @@
+.libro3d-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  perspective: 600px;
+}
+
+@keyframes initAnimation {
+  0% {
+    transform: rotateY(0deg);
+  }
+  100% {
+    transform: rotateY(-30deg);
+  }
+}
+
+.libro3d {
+  width: 200px;
+  height: 300px;
+  position: relative;
+  transform-style: preserve-3d;
+  transform: rotateY(-30deg);
+  transition: 1s ease;
+  animation: 1s ease 0s 1 initAnimation;
+}
+
+.libro3d:hover {
+  transform: rotateY(0deg);
+}
+
+.libro3d > :first-child {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: black;
+  width: 200px;
+  height: 300px;
+  transform: translateZ(25px);
+  background-color: #01060f;
+  border-radius: 0 2px 2px 0;
+  box-shadow: 5px 5px 20px #666;
+}
+
+.libro3d::before {
+  position: absolute;
+  content: ' ';
+  background-color: black;
+  left: 0;
+  top: 3px;
+  width: 48px;
+  height: 294px;
+  transform: translateX(172px) rotateY(90deg);
+  background: linear-gradient(90deg, 
+    #0303030%,
+    #CD14005%,
+    #030303 10%,
+    #CD1400 15%,
+    #030303 20%,
+    #CD1400 25%,
+    #030303 30%,
+    #CD1400 35%,
+    #030303 40%,
+    #CD1400 45%,
+   #030303 50%,
+    #CD1400 55%,
+    #030303 60%,
+    #CD1400 65%,
+    #030303 70%,
+    #CD1400 75%,
+   #030303 80%,
+   #CD1400 85%,
+  #030303 90%,
+   #CD1400 95%,
+   #030303 100%
+    );
+}
+
+.libro3d::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: ' ';
+  width: 200px;
+  height: 300px;
+  transform: translateZ(-25px);
+  background-color: #01060f;
+  border-radius: 0 2px 2px 0;
+  box-shadow: -10px 0 50px 10px #666;
+}

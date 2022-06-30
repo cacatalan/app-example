@@ -1,0 +1,125 @@
+* {
+  box-sizing: border-box
+  ; padding: 0 
+  ; margin: 0
+  ; font-family: Segoe UI Light;
+}
+
+body {
+  width: 100vw ;
+  background-size: cover ;
+  background: linear-gradient(138deg, #b3abab, black, #b3abab, black, #b3abab, black);
+}
+
+.libro {
+  width: 400px ;
+  display: inline-block ;
+  margin: 10px ;
+  box-shadow: 10px 10px 10px black ;
+  position: relative ;
+  background-color: #ae2b2b;
+  border-radius: 30px;
+  
+}
+
+.libro h2 {
+  margin: 30px ;
+  background: black ;
+  color: white ;
+  padding: 30px ;
+  border-radius: 10px 5px ;
+  font-size:40px;
+}
+
+.libro p[descripcion] {
+  margin: 10px ;
+  font-family: Arial ;
+  margin-top: 30px ;
+  color: white;
+}
+
+.libro p[precio] {
+  position: absolute ;
+  top: 10px ;
+  right: 10px ;
+  background: red ;
+  color: white ;
+  border-radius: 50% ;
+  width: 60px
+  ; height: 60px ;
+  text-align: center ;
+  vertical-align: middle ;
+  font-weight: bold ;
+}
+
+.libro p[precio]::before {
+  content: "$ "
+}
+
+.libro p[precio]::after {
+  content: ".-"
+}
+
+
+
+.los-productos {
+  width: 70% ;
+  margin: auto ;
+  text-align: center ;
+  overflow: hidden ;
+}
+
+.bgwrap {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+.bgmove {
+    background: url(https://cdn.glitch.me/ff78b6f5-62d5-49a8-a7b7-194bb55fcfe2%2Fflechita.jpg?v=1638363127564);
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height: 100%;
+    /* remove flicker in webkit */
+    -webkit-backface-visibility: hidden; 
+}
+
+/* Extras */
+
+.text {
+    position: absolute;
+    top: 50%;
+    left: 50%;   
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);         
+    font: bold 60px Arial, sans-serif;
+    color: red;
+    z-index: 1;
+    text-shadow: 0 0 8px #222;
+}
+
+.text:after {
+    position: absolute;
+    left: 0;
+    bottom: 5px;
+    z-index: -1;
+    content: '';
+    width: 100%;    
+    border-bottom: 5px solid #ff3e3e;
+}
+
+.ingresa {
+ color: white;
+    text-align: center;
+    font-size: 70px;
+    background: linear-gradient( 
+90deg , black, #ae2b2b);
+    margin: 40px;
+    padding: 40px;
+    border-radius: 80px;
+    font-weight:bold;
+  
+}
